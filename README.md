@@ -30,7 +30,7 @@ Pre-trained weights of QASA-VQA trained on 1 random split of 500 labelled and 15
 
 ## Acknowledgement 
 Video fragment generation code is taken from FAST-VQA [link](https://github.com/VQAssessment/FAST-VQA-and-FasterVQA/tree/dev?tab=readme-ov-file)
-STVQRL weights are taken from SSL-VQA [link](https://github.com/Shankhanil006/SSL-VQA)
+Clip baseline model with pre-trained weights for ViT-B/32 variant is taken from [linl](https://github.com/openai/CLIP)
 ## Citation
 If you find this work useful for your research, please cite our paper:
 > @inproceedings{mitra2025vision,
