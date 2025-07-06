@@ -26,7 +26,6 @@ import decord
 
 from fastvqa.datasets.fusion_datasets import *
 from swin_backbone import SwinTransformer3D as VideoBackbone
-from supervised_datasets import *
 from fastvqa.models.swin_backbone import SwinTransformer3D as VideoBackbone
 
 import clip
