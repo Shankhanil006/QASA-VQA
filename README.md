@@ -9,10 +9,7 @@ In this work, we address the challenge of requirement of large scale human annot
 >conda env create -f environment.yml
 
 ## Self-supervised Video Quality Representation Learning (ST-VQRL) Model
-To train self-supervised video feature model (ST-VQRL) using LSVQ synthetically generated videos run following:
->python3 STVQRL/self_supervised_train.py
-
-We have used pre-trained ST-VQRL models from SSL-VQA whoseweights on 200x12 synthetically distorted LSVQ videos.
+We have used pre-trained ST-VQRL models from SSL-VQA which is trained on 200x12 synthetically distorted LSVQ videos.
 
 Google Drive: [pretrained-stvqrl](https://drive.google.com/file/d/1uE0QgCZAsjXrvRHP_bdC8xVu5xb4eZUa/view?usp=drive_link)
 
@@ -26,7 +23,11 @@ We have provided 2000 video names in semisupervised.json files and randomly chos
 
 Pre-trained weights of QASA-VQA trained on 1 random split of 500 labelled and 1500 unlabelled video in semisupervised.json:
 
-[pretrained SSL-VQA](https://drive.google.com/file/d/1gv-bP6xZnywv1jzzbU_c8oAGs1wGgxx4/view?usp=drive_link)
+[pretrained QASA-VQA](https://drive.google.com/file/d/1gv-bP6xZnywv1jzzbU_c8oAGs1wGgxx4/view?usp=drive_link)
+
+## Infer with Semi-supervised Video Quality Assessment (QASA-VQA) Model
+To estimate quality of any video using QASA-VQA, use the above pre-trained weights and provide the test video path to run the following scipt:
+> python3 test_clip2stvqrl.py
 
 ## Acknowledgement 
 Video fragment generation code is taken from FAST-VQA [link](https://github.com/VQAssessment/FAST-VQA-and-FasterVQA/tree/dev?tab=readme-ov-file)
